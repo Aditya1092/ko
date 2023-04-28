@@ -48,9 +48,12 @@
   
   checkout(){
     const myModal = document.getElementById('miniCart');
-    
+    const backdrop = document.getElementsByClassName('modal-backdrop')[0];
+  
     // Hide the modal
     myModal.classList.remove('show');
+    backdrop.classList.remove('show');
+  
     myModal.style.display = 'none';
     document.body.classList.remove('modal-open');
     this.$router.push('/checkout')  

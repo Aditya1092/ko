@@ -11,8 +11,9 @@
       <hr />
       <h3 class="d-inline-block ">Product List</h3>
       <br>
+
       
-      <a class="btn btn-outline-info border-0 mx-2 my-2 my-sm-0" float-right  data-bs-toggle="modal" data-bs-target="#product">
+    <a class="btn btn-outline-info border-0 mx-2 my-2 my-sm-0" float-right  data-bs-toggle="modal" data-bs-target="#product">
  
         ADD PRODUCT</a> 
       <div class="modal fade" id="product" tabindex="-1" role="dialog" aria-labelledby="productLabel" aria-hidden="true">
