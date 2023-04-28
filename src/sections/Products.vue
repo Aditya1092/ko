@@ -102,8 +102,7 @@ export default {
     
     <!-- Add "scoped" attribute to limit CSS to this component only -->
     <style scoped lang="scss">
-     #products {
-    
+  #products {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -115,14 +114,14 @@ export default {
   }
 
   h3 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
 
   .product-test {
     background-color: rgb(255, 227, 227);
@@ -130,7 +129,7 @@ export default {
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.304);
   }
-  
+
   .v-carousel__controls__prev,
   .v-carousel__controls__next {
     color: rgb(0, 0, 0) !important;
@@ -140,8 +139,6 @@ export default {
     height: 400px;
     width: 10px;
   }
-
-  
 
   .v-carousel__item {
     height: 100%;
@@ -167,5 +164,30 @@ export default {
 
   .product-item-hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-test {
+      padding: 20px;
+    }
+
+    .product-item {
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .v-window__container {
+      height: 200px;
+    }
+
+    .v-carousel__item {
+      height: 100%;
+    }
   }
 </style>

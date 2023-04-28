@@ -80,7 +80,6 @@ export default {
 .home {
   padding-inline-end: 0%;
   width: 100%;
-
   padding-bottom: 3rem;
   text-align: left;
 }
@@ -95,7 +94,6 @@ h1 {
   letter-spacing: 0.1em;
 }
 
- 
 .team-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -106,7 +104,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; /* Change flex-wrap to wrap */
 }
 
 .team-member {
@@ -114,7 +112,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 2rem;
+  margin: 1rem; /* Add margin */
+  width: 100%; /* Add width */
+  max-width: 400px; /* Set max-width */
 }
 
 .team-member-photo {
@@ -140,7 +140,18 @@ h1 {
   line-height: 1.5;
   text-align: center;
 }
- 
 
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .team-member {
+    margin: 1rem;
+    width: 45%; /* Set width to 45% for two columns */
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  .team-member {
+    width: 30%; /* Set width to 30% for three columns */
+  }
+}
 </style>

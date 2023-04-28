@@ -1,24 +1,18 @@
 <template>
-  <div class="hero" >
-    <div class="container h-100">
-      <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-md-5">
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-6">
           <div class="hero-content">
-            <h1 class="hero-title" >
-              Ecommerce Shop For Women
-            </h1>
-            <p class="hero-text">
-              Our shop offers a wide range of products that are carefully curated to meet your needs and customization
-            </p>
-            <div class="hero-btn mt-5">
+            <h1 class="hero-title">Ecommerce Shop For Women</h1>
+            <p class="hero-text">Our shop offers a wide range of products that are carefully curated to meet your needs and customization</p>
+            <div class="hero-btn">
               <button class="btn btn-primary mr-4" @click="scrollToProducts">Explore</button>
-              
-                <button class="btn btn-outline-secondary"  @click="scrollToAbout">About</button>
-              
+              <button class="btn btn-outline-secondary" @click="scrollToAbout">About</button>
             </div>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-sm-12 col-md-6">
           <div class="graphic">
             <img src="/img/svg/graphic.svg" alt="">
           </div>
@@ -36,32 +30,26 @@ export default {
   },
   methods: {
     scrollToProducts() {
-      window.location.href = '/#products';
+      window.location.href = "/#products";
     },
     scrollToAbout() {
-      window.location.href = '/#about';
+      window.location.href = "/#about";
     }
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
-h1{
+h1 {
   text-align: left;
 }
+
 .hero {
   padding: 2rem 0;
-  width: 100%;
-  padding: left 30%;
-   
-  
   background: #f6dddd;
   text-align: left;
   border-radius: 7px;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.507);
-  
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.507);
 
   .hero-content {
     max-width: 550px;
@@ -79,31 +67,58 @@ h1{
     }
 
     .hero-btn button {
-  margin: 0 1rem;
-  padding: 1.5rem 3rem;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 2rem;
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
+      margin: 0 1rem;
+      padding: 1.5rem 3rem;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: #fff;
+      color: #000;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
 
-.hero-btn button:hover {
-  background-color: #000;
-  color: #fff;
-}
+    .hero-btn button:hover {
+      background-color: #000;
+      color: #fff;
+    }
   }
 
   .graphic {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 
     img {
       max-width: 100%;
       height: auto;
     }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-content {
+    text-align: center;
+
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-btn button {
+      margin: 0 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .graphic {
+    display: none;
   }
 }
 </style>
