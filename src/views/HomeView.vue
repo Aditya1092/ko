@@ -49,40 +49,27 @@ export default {
       teamMembers: [
         {
           id: 1,
-          name: 'Paras Angral',
-          photo: '/img/svg/paras.jpeg',
+          name: 'Aditya Godghate',
+          photo: '/img/svg/mine.jpg',
           title: 'CEO',
           
         },
        
         {
           id: 2,
-          name: 'Aditya Godghate',
-          photo: '/img/svg/mine.jpg',
-          title: 'CEO',
+          name: 'Khushi Vyas',
+          photo: '/img/svg/khushi.jpeg',
+          title: 'CEO OF BESTIE',
           
         },
         {
           id: 3,
-          name: 'Vrinda Maheshwari',
-          photo: '/img/svg/vrinda.jpeg',
-          title: 'CEO',
-           
-        },
-        {
-          id: 4,
-          name: 'Mahin Soni',
-          photo: '/img/svg/MAHIN.jpeg',
-          title: 'CEO',
+          name: 'Akshat Jain',
+          photo: '/img/svg/akshat.jpeg',
+          title: 'CEO OF BHOSADIKA',
           
         },
-        {
-          id: 5,
-          name: 'Yash Sharma',
-          photo: '/img/svg/yash.jpeg',
-          title: 'CEO',
-          
-        },
+        
         
       ]
     }
