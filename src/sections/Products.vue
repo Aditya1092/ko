@@ -5,6 +5,7 @@
     <div class="product-test">
       <hr />
       <br />
+      
 
       <div class="row">
         <div class="col-md-4" v-for="product in products" v-bind:key="product.price">
@@ -166,28 +167,41 @@ export default {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   }
 
-  @media (max-width: 767px) {
-    h3 {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .product-test {
-      padding: 20px;
-    }
-
-    .product-item {
-      padding: 10px;
-      margin: 10px;
-    }
-
-    .v-window__container {
-      height: 200px;
-    }
-
-    .v-carousel__item {
-      height: 100%;
-    }
+  @media (max-width: var(--breakpoint-small)) {
+  .product-item {
+    padding: 10px;
+    margin: 10px;
   }
+
+  .v-window__container {
+    height: 200px;
+  }
+
+  .v-carousel__item {
+    height: 100%;
+  }
+}
+
+@media (min-width: var(--breakpoint-medium)) and (max-width: var(--breakpoint-large)) {
+  .product-item {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .v-window__container {
+    height: 300px;
+  }
+}
+
+@media (min-width: var(--breakpoint-large)) {
+  .product-item {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .v-window__container {
+    height: 400px;
+  }
+}
+
 </style>

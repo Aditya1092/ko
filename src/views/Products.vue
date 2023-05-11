@@ -53,7 +53,7 @@
   <input type="file" class="custom-file-input" id="image" @change="handleImageChange">
   <label class="custom-file-label" for="image">Choose file</label>
   <div v-for="image in product.images" :key="image">
-    <img :src="image" alt="" width="80px">
+    <iframe :src="image" width="100%" height="500px"></iframe>
   </div>
 </div>
 

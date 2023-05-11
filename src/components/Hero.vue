@@ -97,6 +97,10 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+  .hero {
+    padding: 1rem 0;
+  }
+
   .hero-content {
     text-align: center;
 
@@ -117,6 +121,67 @@ h1 {
     }
   }
 
+  .graphic {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    padding: 1.5rem 0;
+  }
+
+  .hero-content {
+    max-width: 450px;
+
+    .hero-title {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-btn button {
+      margin: 0 0.5rem;
+      padding: 1rem 2rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  .graphic {
+    img {
+      max-width: 80%;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .hero-content {
+    max-width: 700px;
+
+    .hero-title {
+      font-size: 5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-text {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero-btn button {
+      margin: 0 1rem;
+      padding: 1.5rem 3rem;
+      font-size: 1.5rem;
+    }
+  }
   .graphic {
     display: none;
   }
